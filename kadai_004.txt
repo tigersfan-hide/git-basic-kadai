@@ -1,0 +1,2 @@
+0db4960 (HEAD -> main) 日本語訳を追記
+8274a08 hello_world.txtを追加
