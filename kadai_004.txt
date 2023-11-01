@@ -1,7 +1,44 @@
- mkdir git_challenge
- cd git_challenge   
- git init
- git add hello_world
- git add hello_world
-0db4960 (HEAD -> main) 日本語訳を追記
-8274a08 hello_world.txtを追加
+PS C:\Users\hide1\Desktop\侍自主学習> cd git_tutorial-2
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2> git init
+Initialized empty Git repository in C:/Users/hide1/Desktop/侍自主学習/git_tutorial-2/.git/
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2> echo "Hello,would" >> hello_world.txt        
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2> mkdir git_challenge 
+
+
+    ディレクトリ: C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/11/01     21:53                git_challenge
+
+
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2> cd git_challenge
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> echo "Hello,would" >> hello_world.txt
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git init
+Initialized empty Git repository in C:/Users/hide1/Desktop/侍自主学習/git_tutorial-2/git_challenge/.git/
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git add hello_world.txt                     
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git commit -m "hello_world.txtを追加"       
+[main (root-commit) c4b362b] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge>  echo "こんにちわ、世界！" >> hello_world.txt
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git add hello_world.txt                     
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git commit -m "日本語訳を追記"              
+[main 3485470] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\hide1\Desktop\侍自主学習\git_tutorial-2\git_challenge> git log
+commit 3485470775b6b5fa0b1fc43705e39777cd2a2190 (HEAD -> main)
+Author: hideto-fukushima <hide1998taka723@gmail.com>
+Date:   Wed Nov 1 21:56:59 2023 +0900
+
+    日本語訳を追記
+
+commit c4b362b17878b155e8af1df4278d2b5bde55fc8b
+Author: hideto-fukushima <hide1998taka723@gmail.com>
+Date:   Wed Nov 1 21:55:18 2023 +0900
+
+    hello_world.txtを追加
